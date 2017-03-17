@@ -2,6 +2,7 @@ var Chance = require('chance');
 var fortune = require('fortune-teller');
 var randomWord = require('random-word');
 var nlp = require('compromise');
+var tcom = require('thesaurus-com');
 module.exports = {
 sqr: function(width, height) {
 	var text =fortune.fortune();
@@ -16,6 +17,7 @@ sqr: function(width, height) {
     console.log("PEOPLE",p.data());
     console.log("NOUNS", nouns.data());
     console.log("TOPICS",r.topics().data());
+    console.log("TCOM",tcom.search('never'));
 	return my_random_string + " " + text + " " + random;
 }
 }
