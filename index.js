@@ -11,8 +11,11 @@ sqr: function(width, height) {
   var my_random_string = chance.name();
     var random = randomWord();
     r = nlp(text);
-    
-    console.log(r.topics().data());
+    var p = r.people();
+    var nouns = r.nouns()
+    console.log("PEOPLE",p.data());
+    console.log("NOUNS", nouns.data());
+    console.log("TOPICS",r.topics().data());
 	return my_random_string + " " + text + " " + random;
 }
 }
