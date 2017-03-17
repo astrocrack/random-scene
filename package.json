@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/astrocrack/random-scene/issues"
   },
-  "homepage": "https://github.com/astrocrack/random-scene#readme"
+  "homepage": "https://github.com/astrocrack/random-scene#readme",
+  "dependencies": {
+    "chance": "^1.0.6",
+    "compromise": "^8.0.2",
+    "fortune-teller": "^0.1.2",
+    "random-word": "^2.0.0"
+  }
 }
